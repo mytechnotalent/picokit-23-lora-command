@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-23-lora-command",
+  "eyebrow": "PICOKIT // LESSON 23",
+  "title": "PICOKIT // LORA COMMAND",
+  "subtitle": "REMOTE COMMAND LEDS + AUTHENTICATED HEARTBEAT",
+  "accent": "#FF00DE",
+  "dim": "#9E0089",
+  "white": "#F3D2FA",
+  "cyan": "#7FD8E0",
+  "bg": "#11000F",
+  "bg_edge": "#050004",
+  "icon": "remote",
+  "panel_status": "CMD 2  ·  GREEN  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "CMD",
+      "value": "2"
+    },
+    {
+      "label": "UPLINK",
+      "value": "5 s"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-38 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway cli send --node 23 --command 2",
+    "[*] node 00023  seq 18  HEARTBEAT  AEAD ok",
+    "[*] command CMD 2 applied  led green",
+    "[+] heartbeat carries c 2  logged",
+    "[+] ack sent  rssi -38  snr 9.0"
+  ],
+  "categories": [
+    "COMMAND",
+    "LED",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "RX-01",
+      "label": "command",
+      "value": "cmd"
+    },
+    {
+      "tag": "LED-01",
+      "label": "selection",
+      "value": "3"
+    },
+    {
+      "tag": "HB-01",
+      "label": "heartbeat",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  REMOTE COMMAND  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  COMMAND  ·  ACT  ·  RADIO  ==[ LEDS ]=="
+  ],
+  "layout": "terminal",
+  "stat": "2"
+}
